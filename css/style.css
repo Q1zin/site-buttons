@@ -343,7 +343,7 @@ template {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
 }
 
@@ -369,7 +369,7 @@ button {
 
 .buttons {
   background-color: #F6F6F6;
-  padding: 60px 0;
+  padding: 60px 0 35px 0;
 }
 
 .buttons__wrapper {
@@ -377,7 +377,7 @@ button {
   margin: auto;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -393,20 +393,20 @@ button {
   min-height: 215px;
   box-shadow: 11px 11px 20px -19px rgba(0, 0, 0, 0.36);
   margin-bottom: 25px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 12px;
+  margin-left: 12px;
 }
 
-.card__demo-button {
+.card__demo-button--1 {
   color: #fff;
   background-color: #007bff;
-  border-color: #007bff;
+  border: 1px #007bff;
   border-radius: 4px;
-  padding: 5px 8px;
+  padding: 7px 28px;
   transition: 0.3s;
 }
 
-.card__demo-button:hover {
+.card__demo-button--1:hover {
   background-color: #0069d9;
   border-color: #0062cc;
 }
@@ -430,16 +430,36 @@ button {
 
 .copy-button {
   font-size: 14px;
-  padding: 4px 7px;
+  padding: 4px 0;
+  text-align: center;
   border-radius: 6px;
   border: 1px solid #808080;
   text-decoration: none;
   background-color: #808080;
   color: #fff;
   box-shadow: 11px 11px 20px -10px rgba(0, 0, 0, 0.26);
+  min-width: 80px;
+  max-width: 80px;
 }
 
 .copy-button:hover {
   background-color: #757575;
+}
+
+.card__button {
+  font-family: sans-serif;
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    padding-top: 30px;
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin: 0 5px 10px 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
